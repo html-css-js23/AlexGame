@@ -1,7 +1,15 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local React = require(ReplicatedStorage.Packages.React)
+local Menu = require(script.Parent.Menu)
+local e = React.createElement
+
 local function RootUI()
+	return e(Menu)
+end
+
+--Testing
+--[[local function RootUI()
 	return React.createElement("TextLabel", {
 		Text = "Hello world!",
 		Size = UDim2.fromScale(1, 1),
@@ -13,4 +21,5 @@ local function RootUI()
 	})
 end
 
-return RootUI
+return RootUI]]
+--
