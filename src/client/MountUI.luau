@@ -2,7 +2,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local React = require(ReplicatedStorage.Packages.React)
 local ReactRoblox = require(ReplicatedStorage.Packages.ReactRoblox)
-local RootUI = require(ReplicatedStorage.Source.Features.App.RootUI)
+local RootUI = require(ReplicatedStorage.Shared.features.app.RootUI)
 
 return function()
 	local player = game.Players.LocalPlayer
